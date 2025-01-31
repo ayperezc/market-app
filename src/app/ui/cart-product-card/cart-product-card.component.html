@@ -1,0 +1,17 @@
+<div *ngIf="product">
+  <div class="flex h-200 card-styles">
+    <img alt="img" [src]="trustedUrl(product.images[0])"/>
+    <div class="flex flex-col flex-grow">
+      <div>
+        <div class="flex justify-between">
+          <h2>{{ product.title }}</h2>
+          <p class="price">${{ product.price }}</p>
+        </div>
+        <div class="flex justify-between align-center">
+          <p>Qty: {{ product.quantity }}</p>
+          <button (click)="onDeleteEvent()" class="delete-button">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

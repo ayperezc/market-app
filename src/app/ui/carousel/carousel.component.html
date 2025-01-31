@@ -1,0 +1,8 @@
+<div class="flex w-full justify-center">
+  <button (click)="prev()">{{ '\<' }}</button>
+  <div class="square">
+    <img class="w-full" [src]="products[selectedProduct].images[0]" alt="img">
+  </div>
+  <button (click)="next()">{{ '\>' }}</button>
+
+</div>

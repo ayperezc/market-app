@@ -1,0 +1,11 @@
+<div class="flex justify-center w-full bg-yellow">
+  <div class="mx-1 flex justify-between align-center w-full max-width custom-height">
+    <p class="custom-title text-blue">MegaMarket</p>
+    <div (click)="openCartModal()" class="square">
+      <img alt="cart" src="/assets/cart.png" class="w-full" />
+      <div *ngIf="productQuantity$ | async as quantity" class="ball flex justify-center align-center">
+        <p>{{ quantity }}</p>
+      </div>
+    </div>
+  </div>
+</div>

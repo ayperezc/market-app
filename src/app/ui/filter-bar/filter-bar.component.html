@@ -1,0 +1,13 @@
+<div class="flex gap-2 mx-1 w-full mt-20">
+  <div class="flex flex-col">
+    <label for="input-filter">Filter by title</label>
+    <input id="input-filter" class="input-filter" type="text" placeholder="Filter" [formControl]="textFilter" />
+  </div>
+  <div class="flex flex-col">
+    <label for="input-filter">Filter by category</label>
+    <select class="select-filter" *ngIf="categoryOptions" [formControl]="categoryFilter">
+      <option value="0" selected>No filter</option>
+      <option *ngFor="let item of categoryOptions" [value]="item.value">{{ item.label }}</option>
+    </select>
+  </div>
+</div>

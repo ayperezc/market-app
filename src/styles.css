@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mx-1 {
+  margin: 0 1rem 0 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0 1rem 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: large;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.main-view {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

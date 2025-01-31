@@ -1,0 +1,33 @@
+.square {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.ball {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+.custom-height {
+  height: 60px;
+}
+.max-width {
+  max-width: 1200px;
+}
+.bg-yellow {
+  background-color: #ffe600;
+}
+.text-blue{
+  color: rgb(36, 36, 99);
+}
+.custom-title{
+  font-size: 20px;
+  font-weight: 600;
+}

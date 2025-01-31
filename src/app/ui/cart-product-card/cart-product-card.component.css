@@ -1,0 +1,28 @@
+h2 {
+  margin: 5px 0 5px 0;
+}
+img {
+  height: 100%;
+  padding-right: 20px;
+}
+.h-200 {
+  height: 75px;
+}
+.card-styles {
+  margin: 1rem;
+  padding: 1rem;
+  border: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+}
+.price {
+  color: #007e13;
+  margin: 5px 0 5px 0;
+}
+.delete-button {
+  height: 30px;
+  border-style: none;
+  color: white;
+  background-color: #c00303;
+}

@@ -1,0 +1,11 @@
+img {
+  width: 400px;
+}
+
+.mb-1 {
+  margin: 0 1rem 0 1rem;
+}
+.price {
+  color: #007e13;
+  margin: 5px 0 5px 0;
+}

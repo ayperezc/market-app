@@ -1,0 +1,21 @@
+<div>
+  <app-header></app-header>
+  <div class="flex justify-center">
+    <div class="main-view">
+      <app-carousel [products]="(products$ | async)!"></app-carousel>
+      <app-filter-bar
+        [textFilter]="textFilter"
+        [categoryFilter]="categoryFilter"
+        [categoryOptions]="categories$ | async"
+      ></app-filter-bar>
+      <div *ngFor="let el of products$ | async">
+        <app-product-card [product]="el" (productClick)="goToProduct(el)"></app-product-card>
+      </div>
+      <app-paginator
+        [(page)]="page"
+        [canGoToTheNext]="(canGoTotheNext$ | async)!"
+        (pageChange)="pageChangeEvent()"
+      ></app-paginator>
+    </div>
+  </div>
+</div>

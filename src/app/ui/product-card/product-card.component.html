@@ -1,0 +1,15 @@
+<div *ngIf="product">
+  <div (click)="onClickEvent(product.id)" class="flex h-200 card-styles changes-small-screen">
+    <img alt="img" [src]="trustedUrl(product.images[0])"/>
+    <div>
+      <div class="flex justify-between align-center">
+        <h2>{{ product.title }}</h2>
+        <p class="price">${{ product.price }}</p>
+      </div>
+      <p class="description">
+        {{ product.description }}
+      </p>
+      <p class="category-tag"> {{ product.category.name }} </p>
+    </div>
+  </div>
+</div>

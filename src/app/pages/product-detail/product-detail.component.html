@@ -1,0 +1,21 @@
+<div class="mx-1">
+  <div class="my-1 flex justify-between align-center">
+    <h2 >{{ data.title }}</h2>
+    <p class="price">${{ data.price }}</p>
+  </div>
+  <p>{{ data.description }}</p>
+  <div class="my-1 flex justify-between align-center">
+    <button (click)="close()">Close</button>
+    <div class="flex gap-2">
+      <button
+        (click)="deleteProduct()"
+        *ngIf="showDelete()"
+        class="delete-button"
+      >Delete</button>
+      <button (click)="addProduct()">Add to cart</button>
+    </div>
+  </div>
+  <div class="flex gap-2 my-1 w-full overflow-y-auto">
+    <img *ngFor="let item of data.images" alt="img" [src]="trustedUrl(item)"/>
+  </div>
+</div>
